@@ -1,0 +1,24 @@
+//Background Color
+$brand-color: #C9131C;
+$body-bg-color: #FBFBFB;
+$wrapper-bg-color: #FBFBFB;
+$footer-color: #2A2A2A;
+
+//Text Colors
+$text-color-dark: #333333;
+$text-color-light: #7d7d7d;
+$footer-text: #eceded;
+
+//Fonts
+$body-font: 'Open Sans', sans-serif, helvetica,;
+$heading-font: 'bitter', 'roboto', sans-serif;
+$line-height: 1.4;
+
+// Media Query Breakpoints
+$desktopMedium: em(1250);
+$tabletLandscape: em(1024);
+$tabletPortrait: em(850);
+$phonePortrait: em(420);
+
+// Utility variables
+$link-hover-selector: '&:hover, &:focus, &:active';

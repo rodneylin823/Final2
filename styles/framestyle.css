@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 Error: Undefined variable: "$footer-color".
         on line 7 of scss/_footer.scss
@@ -81,3 +82,79 @@ body:before {
   white-space: pre;
   font-family: monospace;
   content: "Error: Undefined variable: \"$footer-color\".\A         on line 7 of scss/_footer.scss\A         from line 8 of scss/framestyle.scss\A \A 2: \A 3: @import 'reset';\A 4: @import 'nav';\A 5: \A 6: \A 7: \A 8: @import 'footer';"; }
+=======
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  margin: 0; }
+
+header {
+  background-color: #C9131C;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 150px; }
+
+header nav button {
+  display: none; }
+
+header img {
+  flex: 0 1 auto; }
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+header nav li {
+  padding-top: 75px; }
+
+header nav a {
+  color: #eceded;
+  display: block;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 42px;
+  font-size: 19px;
+  flex: 0 1 auto; }
+
+header nav a:hover,
+header nav a:focus,
+header nav a:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 25vh;
+  background-color: #2A2A2A;
+  color: #eceded;
+  padding: 0 150px; }
+
+.footer-icon img:hover,
+.footer-icon img:focus,
+.footer-icon img:active {
+  transform: scale(1.2); }
+
+/*# sourceMappingURL=framestyle.css.map */
+>>>>>>> f4032ab6c37475451200b30dff5505286cd422cb
