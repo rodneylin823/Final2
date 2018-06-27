@@ -21,7 +21,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 150px; }
+  height: 150px;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  width: 100%;
+  overflow: hidden; }
 
 header nav button {
   display: none; }
@@ -53,8 +58,8 @@ header nav a {
 header nav a:hover,
 header nav a:focus,
 header nav a:active {
-  background-color: rgba(255, 255, 255, 0.2);
-  outline: none; }
+  transform: scale(1.5);
+  color: #2A2A2A; }
 
 footer {
   display: flex;
