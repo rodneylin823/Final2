@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 25vh;
+    background-color: $footer-color;
+    color: $footer-text;
+    padding: 0 150px;
+}
+
+    
+ .footer-icon img:hover,
+  .footer-icon img:focus,
+    .footer-icon img:active {
+   
+    transform: scale(1.2);
+}
