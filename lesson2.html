@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LESSON2 IN COMP1950</title>
+<link href='https://fonts.googleapis.com/css?family=Poiret+One|Open+Sans:400,400italic,700,700italic,800,800italic,300italic,300,600,600italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="styles/framestyle.css">
+<link rel="stylesheet" type="text/css" href="styles/lessons.css">
+</head>
+
+<body>
+
+<header>
+     
+                <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+                   
+                <div class="btn"><button class="hamburger" id="hamburger">
+                        <div class="hamburger-content" tabindex="-1">
+                            <span class="text">Menu</span>
+                            <span class="bar"></span>
+                        </div>
+                    </button></div>
+               <nav>
+                
+                        
+                <ul> 
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                </nav>
+            
+            </header>
+
+
+<main>
+<div class="wrapper">
+	<section>
+      <h1 class="title">Day 02</h1>
+       <article>
+         <h1>Agenda</h1>
+            <ul>
+                <li>Charsets</li>
+                <li>HTML, XHTML, HTML5</li>
+                <li>Semantics</li>
+                <li>Forms, SVG, Multimedia</li>
+                <li>To Do</li>
+            </ul>
+        </article>
+        
+       <article>
+            <h1>Charsets</h1>
+            <p>The W3C recommends the <a href="#0">UTF-8 charset</a> for web development. It includes an impressive array of languages and special characters, and is well supported in common devices. </p>
+            <h4>Assign Character Set</h4>
+            <p>If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the meta tag to the head section of every HTML page: &lt meta charset="utf-8" /&gt </p>
+            <ul>
+                <li>Write all your text-based code (.html, .css, .js, .php, etc) in UTF-8. At development time, ensure your text editor is saving files in this format. This setting is usually found in the application's Preferences menu option.</li>
+                <li>Unless your audience includes very old browsers, you can <a href="#0">code special characters</a> directly into the HTML (you dont need to use HTML entities for most special characters).</li>
+                <li>You cannot copy-paste rich text (such as Microsoft Word, or WordPad) into your HTML. The rich text formatting may result in an unreadable mess.</li>
+                <li>An HTTP server can over-ride your charset preferences when it generates the HTTP header. Details on how to control this will be discussed later in this course.</li>
+            </ul>
+        </article>
+
+       <article>
+            <h1>HTML lang Attribute</h1>
+           <p>Use the lang="" attribute to <a href="#0">declare the language in HTML</a>. This is usually applied to the html element. Assigning the appropriate language code will apply to all contained content, unless over-ridden with another lang="".</p>
+            <p>Use the language abbreviations from the <a href="#0">standard ISO 639-1</a> code set (don't use ISO 639-2).</p>
+            <h4>HTML</h4>
+            <p>What started as a language defined by <a href="#0">SGML</a> (Standard Generalized Markup Language), HTML is used to mark up billions of pages, making up the bulk of the web.</p>
+            <ul>
+                <li>Late 1991, Tim Berners-Lee releases the first iteration of what would become HTML 2.0 (there was no real 1.0+)</li>
+                <li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
+                <li>Over the next decade, various additions, improvements and changes are introduced</li>
+                <li><a href="#0">HTML 4.01</a> released in December 1999</li>
+                <li>Initially used for documents and a place for the technically inclined, the web did not have the international pervasiveness it does today</li>
+                <li>Most developers were new to the language and there were no real classes in it</li>
+                <li>People had to learn as they went along</li>
+                <li>A lot of early sites are poorly designed</li>
+            </ul>
+            <h4>HTML 4.01 template</h4>
+            <p>The problem with the state of HTML then was its reputation as a loose language. Poorly structured code would be rendered differently across user agents, leading to forked code and less predictable results.</p>
+            <h4>XHTML</h4>
+            <p>The <a href="#0">XHTML specification</a> was the result of reqriting <a href="#0">HTML 4.01</a> using the ruleset derived from <a href="#0">XML</a></p>
+            <ul>
+                <li>HTML 4.01 + XML = XHTML 1.0</li>
+                <li>X = eXtensible</li>
+                <li>X = XML related</li>
+                <li>Better, more predictable coding patterns.</li>
+                <li>Verifiable or "well-formed" code can be produced.</li>
+                <li>Forces a higher standard of HTML.</li>
+                <li>Predictable behavior across user agents.</li>
+                <li>Porting to HTML5 is easy (if you also observe semantic guidelines).</li>
+            </ul>
+            <h4>XHTML Rules:</h4>
+            <ul>
+                <li>All elements must be properly nested</li>
+                <ul>
+                    <li>This is not valid: &ltp&gt &ltb&gt Bolded Text &lt/p&gt&lt/b&gt</li>
+                    <li>This can be a problem with things like Lists &ltol&gt and &ltul&gt.</li>
+                    <li>Especially when closing the List Item &ltli&gt tag that contains the &ltul&gt or &ltol&gt tag.</li>
+                </ul>
+                <li>All tags must close </li>
+                <ul>
+                    <li>Example: &ltp&gt Some text here&lt/p&gt </li>
+                    <li>Empty Elements are closed as well: &ltbr /&gt or &ltimg src="#" /&gt </li>
+                    <li>An extra space is required before the slash to work with all browsers.</li>
+                </ul>
+                <li>All tag names must be in lower case</li>
+                <ul>
+                    <li>&ltImg Src="some_image.gif"&gt is not valid</li>
+                </ul>
+                <li>Attribute names are always in lower case</li>
+                <ul>
+                    <li>&ltp ALIGN="center"&gt should be &ltp align="center"&gt</li>
+                </ul>
+                <li>All attributes must be quoted</li>
+                <ul>
+                    <li>&ltbody bgcolor=black&lgt will not work, you need: &ltbody bgcolor="black"&gt</li>
+                </ul>
+                <li>Attributes cannot be minimized</li>
+                <ul>
+                    <li>&ltinput type="checkbox" checked&gt cannot be used. The valid code is: &ltinput type="checkbox" checked="checked" /&lgt</li>
+                </ul>
+                <li>Name Attribute is no longer used (except with forms). Replace "name" with "id".</li>
+                <ul>
+                    <li>&ltimg src="picture.gif" name="myimage" /&gt  will not validate. Use id="myimage" instead.</li>
+                </ul>
+                <li>Mandatory Elements: Every XHTML document must have these elements:</li>
+                <ul>
+                    <li>&lthtml&gt</li>
+                    <li>&lthead&gt</li>
+                    <li>&lttitle&gt</li>
+                    <li>&ltbody&gt</li>
+                    <li>The &lt!DOCTYPE&gt declaration must be there, but it is part of the document itself rather than an element of the document.</li>
+                </ul>
+                <li>Documents must be well-formed</li>
+                <ul>
+                    <li>The document must conform to all of the above rules</li>
+                </ul>
+                <li>Optional XML declaration</li>
+                <ul>
+                    <li>Not required, but good practice:</li>
+                    <li>&lt?xml version="1.0" encoding="ISO-8859-1"?&gt </li>
+                </ul>
+                <li>Optional Element: An XHTML document should also declare the type and character encoding in the head section to ensure the server sends the correct content-type header: <p>&ltmeta http-equiv="Content-Type" 
+                content="text/html" charset="UTF-8"&gt </p></li>
+            </ul>
+            <h4>XHTML 1.0 template</h4>
+            <h4>HTML5</h4>
+           <p>As of October 28, 2014, <a href="#0">HTML5 is the official W3C recommendation</a> HTML5 is more evolutionary then revolutionary. The bulk of previous HTML elements and attributes are maintained, with a few deprecations, and several additions. Significant features include:</p>
+           <ul>
+               <li>Ultra simple Doctype: &lt!DOCTYPE html&gt</li>
+               <li>Specifies how browsers should behave with imperfect code</li>
+               <li>Ability to embed <a href="#0">XML</a>, <a href="#0">MathML</a> or <a href="#0">SVG</a> markup.</li>
+               <li>Standardized Javascript API increases client side script compatibility across browsers</li>
+               <li>Backwards compatible - older versions of HTML can effectively be updated by simply changing the doctype to HTML5</li>
+               <li>Guiding principles: Enhance semantic coding, Support existing content, Pave the cowpaths</li>
+           </ul>
+           <h4>HTML 5 template</h4>
+           <h4>Paving the Cowpaths</h4>
+           <p>Common developer practices have been simplified</p>
+           <ul>
+               <li>Finally a DOCTYPE we can all remember: &lt!DOCTYPE html&gt</li>
+               <li>Declaring the character encoding is easier:&ltmeta charset="utf-8"&gt</li>
+               <li>When linking to external stylesheets theÂ typeÂ attribute is not required:<link rel="stylesheet" href="style.css" /> </li>
+               <li>When embedding CSS theÂ typeÂ attribute is not required:<style></style></li>
+               <li>Including javascripts is simplified as well (typeÂ attribute is not required)<script src="javascripts.js"></script> </li>
+           </ul>
+        </article>
+
+       
+
+
+
+
+</section>
+    </div>
+</main>
+
+
+
+<footer>
+        <div class="footer-icon">
+        <a href="#"> <img src="images/twitter-fav.png" alt="twitter" width="60" height="60"></a>
+        <a href="#"><img src="images/fb-fav.png" alt="facebook" width="60" height="60"></a>
+        <a href="#"><img src="images/instagram-fav.png" alt="instagram" width="60" height="60"></a>
+        <a href="#"><img src="images/github-fav.png" alt="github" width="60" height="60"></a>
+        <a href="#"><img src="images/linkedin-fav.png" alt="linkedin" width="60" height="60"></a>
+        </div>
+        <p>For school project use only. Rodney &amp; Michael &copy;2018</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
