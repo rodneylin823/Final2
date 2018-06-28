@@ -114,8 +114,10 @@ h1, h2, h3, nav a, table {
       
       .instructor {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start; }
+        justify-content: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
         .instructor img {
           border-radius: 50%; }
         .instructor .content {
@@ -133,8 +135,9 @@ h1, h2, h3, nav a, table {
                 display: flex;
                 width: 100%;
                 height: 600px;
+                padding: 0;
             }
-
+           
 
             .banner h1 {
                 font-size: 3vw;
@@ -147,6 +150,7 @@ h1, h2, h3, nav a, table {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                padding: 0;
               
             }
             .column {
@@ -155,7 +159,9 @@ h1, h2, h3, nav a, table {
             .column img{
                 align-self: flex-start;
             }
-
+            article {
+                width: 100%;
+            }
             .instructor{
                 justify-content: center;
                 flex-wrap: wrap;
@@ -166,11 +172,19 @@ h1, h2, h3, nav a, table {
                 line-height: 1.2;
                 
             }
-
-            .michael {
-                padding: 0;
-                margin: 0;
+            .new {
+                padding:0;
             }
 
+            .michael {
+                padding: 30px 0 0 0;
+                margin: 0;
+            }
+    }
 
-     }
+    @media only screen and (max-width: 350px) {
+
+        .michael{
+            display: none;
+        }
+    }
