@@ -112,7 +112,7 @@ h1, h2, h3, nav a, table {
       .outcome {
         display: flex; }
       
-      .instructor {
+    .instructor {
         display: flex;
         justify-content: center;
         align-content: flex-start;
@@ -124,7 +124,10 @@ h1, h2, h3, nav a, table {
           padding-left: 80px;
           line-height: 1.4; }
 
-          @media only screen and (max-width: 850px){
+
+
+
+@media only screen and (max-width: 850px){
            
             body {
                 font-size: 14px;
@@ -163,8 +166,9 @@ h1, h2, h3, nav a, table {
                 width: 100%;
             }
             .instructor{
+                
                 justify-content: center;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 width: 100%;
                 padding-right: 0px;
                 margin: 0;
