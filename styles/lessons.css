@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Fira+Sans:900|Patua+One|Spectral');
 
 body{
-    background-color: lightgrey;
+    background-image: url(/images/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode:difference;
 }
 
 .wrapper {
