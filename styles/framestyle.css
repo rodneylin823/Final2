@@ -1,88 +1,3 @@
-<<<<<<< HEAD
-/*
-Error: Undefined variable: "$footer-color".
-        on line 7 of scss/_footer.scss
-        from line 8 of scss/framestyle.scss
-
-2: 
-3: @import 'reset';
-4: @import 'nav';
-5: 
-6: 
-7: 
-8: @import 'footer';
-
-Backtrace:
-scss/_footer.scss:7
-scss/framestyle.scss:8
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `map'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `block in with_import'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `with_import'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/michael/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$footer-color\".\A         on line 7 of scss/_footer.scss\A         from line 8 of scss/framestyle.scss\A \A 2: \A 3: @import 'reset';\A 4: @import 'nav';\A 5: \A 6: \A 7: \A 8: @import 'footer';"; }
-=======
 html {
   box-sizing: border-box; }
 
@@ -146,6 +61,48 @@ header nav a:active {
   transform: scale(1.5);
   color: #2A2A2A; }
 
+@media only screen and (max-width: 850px) {
+  header {
+    display: flex;
+    justify-content: space-around; }
+
+  .hamburger {
+    display: block;
+    width: 50px; }
+
+  nav {
+    display: none; }
+
+  nav ul {
+    display: none; }
+
+  .show header {
+    display: flex;
+    align-content: center;
+    height: 30vh; }
+    .show header .logo {
+      display: none; }
+
+  .show nav {
+    display: flex;
+    text-align: center; }
+
+  .show nav ul {
+    display: block;
+    width: 100%; }
+
+  .show nav li {
+    padding: 15px;
+    margin: 0; }
+
+  .show nav a {
+    line-height: 30px; }
+
+  .show nav a:focus,
+  .show nav a:hover,
+  .show nav a:active {
+    color: #808080;
+    outline: none; } }
 footer {
   display: flex;
   justify-content: space-between;
@@ -162,4 +119,3 @@ footer {
   transform: scale(1.2); }
 
 /*# sourceMappingURL=framestyle.css.map */
->>>>>>> f4032ab6c37475451200b30dff5505286cd422cb

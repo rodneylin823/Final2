@@ -37,3 +37,74 @@ header {
   header nav a:active {
     transform: scale(1.5);
     color: #2A2A2A; }
+
+    
+@media only screen and (max-width: 850px){
+
+header {
+  display:flex;
+  justify-content: space-around;
+}
+
+.hamburger {
+    display: block;
+    width: 50px;
+
+}
+
+ nav {
+   display:none;
+
+ }
+
+ nav ul {
+   display: none;
+ }
+  
+.show header {
+  display: flex;
+  align-content: center;
+  height: 30vh;
+  
+ 
+  .logo{
+    display: none;
+  }
+
+
+}
+
+  .show nav {
+    display:flex;
+    text-align: center;
+    
+}
+
+.show nav ul{
+  display:block;
+  width:100%;
+}
+.show nav li{
+  padding:15px;
+  margin:0;
+}
+
+.show nav a {
+  line-height:30px;    
+}
+
+.show nav a:focus,
+    .show nav a:hover,
+    .show nav a:active {
+      
+        color: #808080;
+        outline: none;
+    }
+    
+   
+
+
+}
+
+
+    

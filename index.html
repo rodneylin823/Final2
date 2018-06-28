@@ -6,27 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Comp1950</title>
     <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/framestyle.css">
+    <link rel="stylesheet" href="index.css">
 
 </head>
 <body>
     
     <header>
      
-    <div><a href="index.html"><img src="images/logo.png"></a></div>
+    <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
        
+    <div class="btn"><button class="hamburger" id="hamburger">
+            <div class="hamburger-content" tabindex="-1">
+                <span class="text">Menu</span>
+                <span class="bar"></span>
+            </div></div>
+        </button>
    <nav>
-       
-        <button class="hamburger" id="hamburger">
-                <div class="hamburger-content" tabindex="-1">
-                    <span class="text">Menu</span>
-                    <span class="bar"></span>
-                </div></button>
+    
             
     <ul> 
         <li><a href="#">About</a></li>
         <li><a href="#">Schedule</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="#">FAQ</a></li>
     </ul>
     </nav>
@@ -133,6 +135,6 @@
         <p>For school project use only. Rodney &amp; Michael &copy;2018</p>
     </footer>
     
-    
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

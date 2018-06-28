@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+main {
+    margin-top:150px;
+}
+
+.contact-form {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+
+}
+
+h1 {
+    padding: 50px;
+}
+
+.entries {
+    width: 32%;
+    height: 25px;
+    margin: 15px;
+    border: 2px solid #2A2A2A;
+    color: #333333;
+    background-color: #eceded;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+textarea {
+   width: 33%;
+   
+   border: 2px solid #2A2A2A;
+   border-radius: 4px;
+   margin-left: 45px;
+}
+
+
+

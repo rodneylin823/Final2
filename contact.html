@@ -6,45 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us</title>
     <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="styles/framestyle.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    
 </head>
 <body>
    
         <header>
-                <a href="index.html"><img src="images/logo.png"></a>
-                <h2>school of computing and academic studies</h2>
-                <h1>comp 1950 - Web Development and Design 2</h1>
-                <button class="hamburger" id="hamburger">
+     
+                <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+                   
+                <div class="btn"><button class="hamburger" id="hamburger">
                         <div class="hamburger-content" tabindex="-1">
                             <span class="text">Menu</span>
                             <span class="bar"></span>
+                        </div></div>
+                    </button>
+               <nav>
+                
+                        
+                <ul> 
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                </nav>
+            
             </header>
-            <div class="wrapper">
-            <nav>
-            <ul> 
-                <li><a href="#">About</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-            </nav>
-
+    <main>
+    <div class="contact-form">
     <h1>Contact Us</h1>
-    <fieldset>
+    
     <form name="contact" method="post" id="contact" action="mailto:hhshiu@live.com">
-       <label>Name: <input type="text" name="name" id="name" required="required" size="24"></label><br>
+       <label>Name: <input class="entries" type="text" name="name" id="name" required="required" size="24"></label><br>
 
-       <label for="email">Email: <input type="email" name="email" id="email" required="required" size="24"></label><br>
+       <label for="email">Email: <input class="entries" type="email" name="email" id="email" required="required" size="24"></label><br>
 
-       <label for="phone">Phone: <input type="tel" name="phone" id="phone" required="required" size="24"></label><br>
+       <label for="phone">Phone: <input class="entries" type="tel" name="phone" id="phone" required="required" size="24"></label><br>
 
-       <labe for="message">Message: </labe><br><textarea name="Name" id="name" cols="40" rows="4"></textarea>
+       <div><label for="message">Message: </label></div>
+       <div><textarea name="message" id="message" cols="40" rows="20"></textarea></div>
 
        <br><input id="submit" type="submit" value="submit">
-       
-    </form>
-    </fieldset>
+       </form>
+    
 
     </div>
+    </main>
     <footer>
             <div class="footer-icon">
             <a href="#"> <img src="images/twitter-fav.png" alt="twitter" width="60" height="60"></a>
@@ -55,5 +64,7 @@
             </div>
             <p>For school project use only. Rodney &amp; Michael &copy;2018</p>
         </footer>
+
+        <script src="scripts/menu.js"></script>
 </body>
 </html>
