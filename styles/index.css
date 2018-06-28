@@ -1,0 +1,118 @@
+img {
+    max-width: 100%;
+    height: auto; }
+  
+body {
+    margin: 0;
+    background-color: #FBFBFB; }
+  
+h1, h2, h3, nav a, table {
+    font-family: "bitter", "roboto", sans-serif; }
+
+    .hero {
+        position: relative;
+        padding: 0 150px; }
+        .hero h2 {
+          line-height: 1.5;
+          margin: 0;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-transform: uppercase;
+          font-weight: bold;
+          color: white;
+          font-size: 1.35vw;
+          padding: 15px;
+          opacity: 1; }
+        .hero h1 {
+          line-height: 1.5;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-transform: uppercase;
+          font-weight: bold;
+          color: white;
+          font-size: 1.35vw;
+          padding: 15px;
+          opacity: 1; }
+      
+      .banner {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex: 0 1 auto;
+        padding: 80px 150px;
+        color: #eceded;
+        background-color: #C9131C;
+        margin: 0;
+        width: 100%; }
+        .banner h1 {
+          font-size: 2.8rem; }
+        .banner h3 {
+          padding-top: 20px;
+          font-size: 1.6rem;
+          font-weight: normal; }
+      
+      section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 30px 250px;
+        line-height: 1.6;
+        font-size: 1.4rem;
+        color: #7d7d7d; }
+      
+      .row {
+        display: grid;
+        padding-top: 75px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px 25px;
+        grid-template-areas: "html js " "design vs" "sass github"; }
+      
+      .column {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        border: none;
+        flex-wrap: wrap;
+        font-size: calc(1.6rem / (3/2)); }
+        .column img {
+          float: left;
+          overflow: hidden;
+          width: 100px;
+          height: 100px; }
+      
+      .box-01 {
+        grid-area: html; }
+      
+      .box-02 {
+        grid-area: js; }
+      
+      .box-03 {
+        grid-area: design; }
+      
+      .box-04 {
+        grid-area: vs; }
+      
+      .box-05 {
+        grid-area: sass; }
+      
+      .box-06 {
+        grid-area: github; }
+      
+      .outcome {
+        display: flex; }
+      
+      .instructor {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; }
+        .instructor img {
+          border-radius: 50%; }
+        .instructor .content {
+          padding-left: 80px;
+          line-height: 1.4; }
