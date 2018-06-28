@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:900|Lobster|Spectral');
 
+body {
+    background-image: url(/images/bg3.png);
+    background-size: cover;
+    background-attachment: fixed;
+        
+}
+
 .wrapper {
     max-width: 920px;
-    padding: 50px 20px;
+    padding: 50px 30px;
     background-color: lightgrey;
     margin: 150px auto;
 }
@@ -14,5 +21,16 @@
 }
 
 article {
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+li {
+    font-family: 'spectral', sans-serif;
+    
+}
+
+article p {
+    font-family: 'spectral', sans-serif;
+    text-indent: 5%;
+    
 }
