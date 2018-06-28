@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Fira+Sans:900|Patua+One|Spectral');
+
+body{
+    background-color: lightgrey;
+}
+
 .wrapper {
-    padding: 50px 120px;
-    background-color: darkgrey;
-    margin-top: 150px;
+    max-width: 920px;
+    padding: 50px 20px;
+    background-color: white;
+    margin: 150px auto;
 }
 
 article {
@@ -10,11 +17,29 @@ article {
     margin-top:20px;
 }
 
-h1 {
-     text-align: center;   
+.title {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:2em;
+}
+
+
+article h1 {
+     text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5em;
 }
 
 
 h4 {
-     margin-top: 20px;   
+     margin-top: 20px;
+    font-family: 'Patua One', cursive;
+}
+
+li {
+    font-family: 'Spectral', serif;
+}
+
+p {
+    font-family: 'Spectral', serif;
 }
