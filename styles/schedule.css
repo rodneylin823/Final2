@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:900|Lobster|Spectral');
+
+body {
+    background-image: url(/images/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+        
+}
+
+
+.wrapper {
+    max-width: 920px;
+    padding: 50px 20px;
+    background-color: lightgrey;
+    margin: 150px auto;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:2em;
+}
+
+article h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+ul {
+    padding-left: 150px;
+}
+
+li{
+    font-family: 'Spectral', serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+.test {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap; 
+    margin-top:20px;
+}
+
+article {
+    width: 50%;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 823px){
+
+article {
+    width: 100%;
+}
+
+ul {
+    padding-left: 20%;
+}
+
+}
+
